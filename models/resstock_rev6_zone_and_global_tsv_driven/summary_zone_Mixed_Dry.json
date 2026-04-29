@@ -1,0 +1,61 @@
+{
+  "selected_model": "CatBoost",
+  "model_stats": {
+    "XGBoost": {
+      "mae": 14.516694901954756,
+      "rmse": 24.24026379295823,
+      "r2": 0.8848238118068738,
+      "gap": 13.319587742722469,
+      "gen_score": 30.900057664319466
+    },
+    "CatBoost": {
+      "mae": 13.399968374593616,
+      "rmse": 22.471600211127136,
+      "r2": 0.9010180472537155,
+      "gap": 9.072079325696654,
+      "gen_score": 27.007639873975464
+    },
+    "LightGBM": {
+      "mae": 14.465581776747262,
+      "rmse": 24.53457531216437,
+      "r2": 0.8820100254223799,
+      "gap": 21.403878825481375,
+      "gen_score": 35.23651472490506
+    },
+    "Stacking": {
+      "mae": 14.190227144500748,
+      "rmse": 23.715441528901117,
+      "r2": 0.8897571461683423,
+      "gap": 10.697974225278527,
+      "gen_score": 29.06442864154038
+    }
+  },
+  "use_log_target": true,
+  "use_monotonic_constraints": true,
+  "zone": "Mixed-Dry",
+  "rows": 3915,
+  "detected_heating_columns": [
+    "out.propane.heating_hp_bkup.energy_consumption_intensity",
+    "out.propane.heating.energy_consumption_intensity",
+    "out.electricity.heating.energy_consumption",
+    "out.fuel_oil.heating_hp_bkup.energy_consumption",
+    "out.fuel_oil.heating.energy_consumption",
+    "out.electricity.heating_hp_bkup.energy_consumption_intensity",
+    "out.fuel_oil.heating.energy_consumption_intensity",
+    "out.natural_gas.heating.energy_consumption_intensity",
+    "out.propane.heating.energy_consumption",
+    "out.natural_gas.heating.energy_consumption",
+    "out.natural_gas.heating_hp_bkup.energy_consumption",
+    "out.electricity.heating_hp_bkup_fa.energy_consumption",
+    "out.propane.heating_hp_bkup.energy_consumption",
+    "out.electricity.heating_fans_pumps.energy_consumption_intensity",
+    "out.electricity.heating_fans_pumps.energy_consumption",
+    "out.electricity.heating_hp_bkup_fa.energy_consumption_intensity",
+    "out.electricity.heating.energy_consumption_intensity",
+    "out.fuel_oil.heating_hp_bkup.energy_consumption_intensity",
+    "out.natural_gas.heating_hp_bkup.energy_consumption_intensity",
+    "out.electricity.heating_hp_bkup.energy_consumption"
+  ],
+  "feature_mode": "resstock_tsv_driven",
+  "uses_climate_as_feature": false
+}
