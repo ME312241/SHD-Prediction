@@ -1,0 +1,198 @@
+Loading and processing BDG2 and ASHRAE data...
+BDG2 metadata shape: (1636, 32)
+BDG2 weather shape: (331166, 10)
+BDG2 heating data shape after melt and filter: (8589214, 4)
+BDG2 merged data shape: (8589214, 19)
+BDG2 loading and processing took 4.52s
+ASHRAE train shape: (20216100, 4)
+ASHRAE meta shape: (1449, 6)
+ASHRAE weather shape: (139773, 9)
+ASHRAE merged data shape: (18342124, 19)
+ASHRAE loading and processing took 12.47s
+Combined data shape: (26931338, 22)
+Combining datasets took 2.26s
+Energy unit conversion took 207.63s
+Data shape after outlier removal: (26904406, 25)
+Buildings total: 2134
+Final data shape after feature engineering and dropna: (16286054, 71)
+Feature engineering took 87.60s
+Total unique sites: 11
+Unique site IDs: [0, 2, 3, 4, 6, 8, 9, 10, 13, 14, 15]
+
+Training models for site 0 ...
+  Site 0 data shape: (714475, 71)
+  Unique buildings in site 0: 105
+  Train samples: 257616, Test samples: 456859
+  Train unique buildings: 105, Test unique buildings: 105
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site0_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site0_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site0_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site0_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.4827, RMSE=1.5013, R²=0.9782, CV-RMSE=36.4356%
+    LightGBM daily metrics: MAE=0.4058, RMSE=1.2348, R²=0.9852, CV-RMSE=29.9673%
+    CatBoost daily metrics: MAE=0.7743, RMSE=1.8599, R²=0.9665, CV-RMSE=45.1374%
+    StackingEnsemble daily metrics: MAE=0.8001, RMSE=4.3388, R²=0.8175, CV-RMSE=105.2990%
+  Site 0 completed in 342.96s (trained 4 models)
+
+Training models for site 2 ...
+  Site 2 data shape: (2276853, 71)
+  Unique buildings in site 2: 135
+  Train samples: 1335891, Test samples: 940962
+  Train unique buildings: 135, Test unique buildings: 135
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site2_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site2_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site2_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site2_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.1384, RMSE=0.9511, R²=0.8618, CV-RMSE=78.0857%
+    LightGBM daily metrics: MAE=0.1463, RMSE=1.0752, R²=0.8233, CV-RMSE=88.2793%
+    CatBoost daily metrics: MAE=0.1455, RMSE=1.0273, R²=0.8387, CV-RMSE=84.3427%
+    StackingEnsemble daily metrics: MAE=0.1401, RMSE=0.9038, R²=0.8752, CV-RMSE=74.2040%
+  Site 2 completed in 1524.75s (trained 4 models)
+
+Training models for site 3 ...
+  Site 3 data shape: (2364562, 71)
+  Unique buildings in site 3: 274
+  Train samples: 1373596, Test samples: 990966
+  Train unique buildings: 273, Test unique buildings: 273
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site3_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site3_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site3_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site3_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.0485, RMSE=0.0999, R²=0.9770, CV-RMSE=18.1399%
+    LightGBM daily metrics: MAE=0.0476, RMSE=0.1029, R²=0.9756, CV-RMSE=18.6841%
+    CatBoost daily metrics: MAE=0.0482, RMSE=0.0951, R²=0.9792, CV-RMSE=17.2607%
+    StackingEnsemble daily metrics: MAE=0.0453, RMSE=0.0902, R²=0.9813, CV-RMSE=16.3788%
+  Site 3 completed in 1620.64s (trained 4 models)
+
+Training models for site 4 ...
+  Site 4 data shape: (742694, 71)
+  Unique buildings in site 4: 91
+  Train samples: 419206, Test samples: 323488
+  Train unique buildings: 86, Test unique buildings: 91
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site4_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site4_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site4_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site4_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.1047, RMSE=0.9057, R²=0.3310, CV-RMSE=183.1310%
+    LightGBM daily metrics: MAE=0.0996, RMSE=0.8644, R²=0.3907, CV-RMSE=174.7684%
+    CatBoost daily metrics: MAE=0.1063, RMSE=0.9171, R²=0.3141, CV-RMSE=185.4248%
+    StackingEnsemble daily metrics: MAE=0.1054, RMSE=0.8889, R²=0.3556, CV-RMSE=179.7279%
+  Site 4 completed in 555.36s (trained 4 models)
+
+Training models for site 6 ...
+  Site 6 data shape: (554916, 71)
+  Unique buildings in site 6: 44
+  Train samples: 320407, Test samples: 234509
+  Train unique buildings: 43, Test unique buildings: 44
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site6_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site6_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site6_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site6_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.1043, RMSE=0.2885, R²=0.9729, CV-RMSE=25.4627%
+    LightGBM daily metrics: MAE=0.0971, RMSE=0.2907, R²=0.9725, CV-RMSE=25.6554%
+    CatBoost daily metrics: MAE=0.1159, RMSE=0.3166, R²=0.9674, CV-RMSE=27.9452%
+    StackingEnsemble daily metrics: MAE=0.1808, RMSE=0.4683, R²=0.9287, CV-RMSE=41.3345%
+  Site 6 completed in 472.86s (trained 4 models)
+
+Training models for site 8 ...
+  Site 8 data shape: (541062, 71)
+  Unique buildings in site 8: 70
+  Train samples: 327544, Test samples: 213518
+  Train unique buildings: 70, Test unique buildings: 69
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site8_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site8_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site8_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site8_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.0230, RMSE=0.0839, R²=0.9815, CV-RMSE=12.6536%
+    LightGBM daily metrics: MAE=0.0232, RMSE=0.0895, R²=0.9789, CV-RMSE=13.5043%
+    CatBoost daily metrics: MAE=0.0359, RMSE=0.0988, R²=0.9743, CV-RMSE=14.9105%
+    StackingEnsemble daily metrics: MAE=0.0237, RMSE=0.0813, R²=0.9826, CV-RMSE=12.2576%
+  Site 8 completed in 441.21s (trained 4 models)
+
+Training models for site 9 ...
+  Site 9 data shape: (2489834, 71)
+  Unique buildings in site 9: 124
+  Train samples: 1427332, Test samples: 1062502
+  Train unique buildings: 123, Test unique buildings: 124
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site9_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site9_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site9_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site9_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.0654, RMSE=0.2433, R²=0.9270, CV-RMSE=22.8275%
+    LightGBM daily metrics: MAE=0.0790, RMSE=0.2459, R²=0.9254, CV-RMSE=23.0772%
+    CatBoost daily metrics: MAE=0.0720, RMSE=0.2330, R²=0.9331, CV-RMSE=21.8605%
+    StackingEnsemble daily metrics: MAE=0.0745, RMSE=0.2309, R²=0.9343, CV-RMSE=21.6685%
+  Site 9 completed in 1593.47s (trained 4 models)
+
+Training models for site 10 ...
+  Site 10 data shape: (324227, 71)
+  Unique buildings in site 10: 30
+  Train samples: 189293, Test samples: 134934
+  Train unique buildings: 30, Test unique buildings: 29
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site10_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site10_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site10_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site10_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.6877, RMSE=3.8796, R²=0.4924, CV-RMSE=248.9899%
+    LightGBM daily metrics: MAE=0.6399, RMSE=3.5285, R²=0.5801, CV-RMSE=226.4542%
+    CatBoost daily metrics: MAE=0.6636, RMSE=3.7855, R²=0.5167, CV-RMSE=242.9504%
+    StackingEnsemble daily metrics: MAE=0.5984, RMSE=3.6306, R²=0.5555, CV-RMSE=233.0105%
+  Site 10 completed in 331.39s (trained 4 models)
+
+Training models for site 13 ...
+  Site 13 data shape: (2387589, 71)
+  Unique buildings in site 13: 154
+  Train samples: 1370614, Test samples: 1016975
+  Train unique buildings: 153, Test unique buildings: 154
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site13_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site13_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site13_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site13_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.4168, RMSE=5.1673, R²=0.5851, CV-RMSE=260.5279%
+    LightGBM daily metrics: MAE=0.3532, RMSE=4.6982, R²=0.6570, CV-RMSE=236.8752%
+    CatBoost daily metrics: MAE=0.3938, RMSE=4.7609, R²=0.6478, CV-RMSE=240.0371%
+    StackingEnsemble daily metrics: MAE=0.5702, RMSE=6.1386, R²=0.4144, CV-RMSE=309.4964%
+  Site 13 completed in 1684.59s (trained 4 models)
+
+Training models for site 14 ...
+  Site 14 data shape: (2226769, 71)
+  Unique buildings in site 14: 102
+  Train samples: 1316127, Test samples: 910642
+  Train unique buildings: 102, Test unique buildings: 102
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site14_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site14_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site14_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site14_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.3293, RMSE=0.5999, R²=0.9630, CV-RMSE=18.4266%
+    LightGBM daily metrics: MAE=0.3635, RMSE=0.7115, R²=0.9479, CV-RMSE=21.8539%
+    CatBoost daily metrics: MAE=0.3346, RMSE=0.6323, R²=0.9589, CV-RMSE=19.4212%
+    StackingEnsemble daily metrics: MAE=0.3050, RMSE=0.5520, R²=0.9687, CV-RMSE=16.9548%
+  Site 14 completed in 1817.25s (trained 4 models)
+
+Training models for site 15 ...
+  Site 15 data shape: (1663073, 71)
+  Unique buildings in site 15: 124
+  Train samples: 864497, Test samples: 798576
+  Train unique buildings: 124, Test unique buildings: 124
+    Saved tuned XGBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site15_XGBoost.joblib
+    Saved tuned LightGBM model to A:\College\thesis\Models\dataset_archive\heating_model_site15_LightGBM.joblib
+    Saved tuned CatBoost model to A:\College\thesis\Models\dataset_archive\heating_model_site15_CatBoost.joblib
+    Saved stacking ensemble to A:\College\thesis\Models\dataset_archive\heating_model_site15_StackingEnsemble.joblib
+    XGBoost daily metrics: MAE=0.1402, RMSE=0.4293, R²=0.9731, CV-RMSE=32.7183%
+    LightGBM daily metrics: MAE=0.1549, RMSE=0.5288, R²=0.9592, CV-RMSE=40.3002%
+    CatBoost daily metrics: MAE=0.1989, RMSE=0.7601, R²=0.9158, CV-RMSE=57.9275%
+    StackingEnsemble daily metrics: MAE=0.1636, RMSE=0.5080, R²=0.9624, CV-RMSE=38.7156%
+  Site 15 completed in 1110.16s (trained 4 models)
+Total training time: 11497.23s
+Total models trained: 44
+Models saved: 52
+
+Trained models for 0 sites out of 11 total sites.
+
+Detailed Results per Site and Model:
+No sites were trained; no metrics to aggregate.
+
+Summary:
+ • Total runtime:   11820.7 seconds
+ • Models saved in: A:\College\thesis\Models\dataset_archive
+ • Hourly modeling with daily aggregation for evaluation.
