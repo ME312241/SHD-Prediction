@@ -4,7 +4,7 @@ Machine Learning Surrogate Models for Specific Heating Demand Prediction
 
 This repository contains the code for the thesis "Machine Learning Approaches to the Prediction of Specific Heating Demand" (Mohamed Elsayed, Spring 2026).
 
-It provides training pipelines for gradient boosting surrogate models (XGBoost, CatBoost, LightGBM) and a Streamlit demonstration app. The models predict Specific Heating Demand (SHD) in kWh/m²/yr using physics-informed feature engineering and advanced hyperparameter tuning.
+It provides training pipelines and a Streamlit demonstration app. The models predict Specific Heating Demand (SHD) in kWh/m²/yr.
 
 ---
 
@@ -62,17 +62,9 @@ Set these parameters at the top of each notebook:
 
 - `DATA_PATH` — path to the downloaded Parquet file
 - `OUTPUT_DIR` — directory to save trained models
-- `N_TRIALS_*` — reduce for faster testing (e.g., to 10)
 
-### Features
 
-The notebooks include:
-- Physics-informed feature engineering
-- Optuna hyperparameter tuning
-- GroupKFold cross-validation
-- SHAP explainability analysis
-
-Trained models will be saved as `.joblib` files in the specified output directory (or `models/` folder).
+Trained models will be saved as `.joblib` files in the `models/` folder.
 
 ---
 
@@ -93,11 +85,10 @@ The app will be available at `http://localhost:8501`
 - **Zone Performance** — View model metrics by climate zone
 - **Methodology** — Project overview
 
-The app runs in limited mode if models are not found. You can specify your own full directory path where you pulled the repository.
+The app runs in limited mode if models are not found. You should specify the models path for resstock and comstock on your device, depending on which section is currently active.
 
 ---
 
 ## Notes
 
-- Trained model files are not included in the repository due to their size
-- You must generate them locally by running the notebooks
+- The dataset parquet files are not included in this repository due to their size, you can download them from https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F
