@@ -1,60 +1,103 @@
-SHD-Prediction
+# SHD-Prediction
+
 Machine Learning Surrogate Models for Specific Heating Demand Prediction
+
 This repository contains the code for the thesis "Machine Learning Approaches to the Prediction of Specific Heating Demand" (Mohamed Elsayed, Spring 2026).
-It provides training pipelines for gradient boosting surrogate models (XGBoost, CatBoost, LightGBM) and a Streamlit demonstration app. The models predict Specific Heating Demand (SHD) in kWh/m²/yr using building characteristics from NREL’s ResStock and ComStock datasets.
 
-Repository Structure
-textSHD-Prediction/
-├── final_final_restock.ipynb          # Residential (ResStock) training pipeline
-├── final_final_comstock.ipynb         # Commercial (ComStock) training pipeline
-├── app.py                             # Streamlit web app
-├── requirements.txt
-├── models/                            # Folder for trained .joblib models
-├── BDG2.ipynb
+It provides training pipelines for gradient boosting surrogate models (XGBoost, CatBoost, LightGBM) and a Streamlit demonstration app. The models predict Specific Heating Demand (SHD) in kWh/m²/yr using physics-informed feature engineering and advanced hyperparameter tuning.
+
+---
+
+## Repository Structure
+
+```
+SHD-Prediction/
+├── final_final_restock.ipynb       # Residential (ResStock) training pipeline
+├── final_final_comstock.ipynb      # Commercial (ComStock) training pipeline
+├── app.py                          # Streamlit web app
+├── requirements.txt                # Python dependencies
+├── models/                         # Folder for trained .joblib models
+├── BDG2.ipynb                      # Additional analysis notebook
 └── README.md
+```
 
-Installation
-Bashgit clone https://github.com/ME312241/SHD-Prediction.git
+---
+
+## Installation
+
+```bash
+git clone https://github.com/ME312241/SHD-Prediction.git
 cd SHD-Prediction
 pip install -r requirements.txt
-Python 3.10+ is recommended.
+```
 
-Data Requirements
+**Requirements:** Python 3.10+
+
+---
+
+## Data Requirements
+
 You need to download the baseline Parquet files separately:
 
-ResStock: baseline_metadata_and_annual_results_hdd65.parquet
-ComStock: Baseline ComStock Parquet file
+- **ResStock:** `baseline_metadata_and_annual_results_hdd65.parquet`
+- **ComStock:** Baseline ComStock Parquet file
 
-Then update the DATA_PATH variable in the respective notebooks.
+Then update the `DATA_PATH` variable in the respective notebooks.
 
-Running the Training Notebooks
+---
+
+## Running the Training Notebooks
+
 Open the notebooks in Jupyter and run them:
 
-final_final_restock.ipynb — Residential models
-final_final_comstock.ipynb — Commercial models
+### Residential Models
+- `final_final_restock.ipynb`
 
-Important settings (at the top of each notebook):
+### Commercial Models
+- `final_final_comstock.ipynb`
 
-DATA_PATH → path to the downloaded Parquet file
-OUTPUT_DIR → directory to save trained models
-Reduce N_TRIALS_* (e.g., to 10) for faster testing
+### Important Settings
 
-The notebooks include physics-informed feature engineering, Optuna hyperparameter tuning, GroupKFold validation, and SHAP explainability.
-Trained models will be saved as .joblib files in the specified output directory (or models/ folder).
+Set these parameters at the top of each notebook:
 
-Running the Streamlit App
+- `DATA_PATH` — path to the downloaded Parquet file
+- `OUTPUT_DIR` — directory to save trained models
+- `N_TRIALS_*` — reduce for faster testing (e.g., to 10)
 
-Place the trained model files in the models/ folder.
-Run the app:
+### Features
 
-Bashstreamlit run app.py
-The app will be available at http://localhost:8501.
-Features:
+The notebooks include:
+- Physics-informed feature engineering
+- Optuna hyperparameter tuning
+- GroupKFold cross-validation
+- SHAP explainability analysis
 
-Predict: Estimate SHD from building inputs
-Zone Performance: View model metrics by climate zone
-Methodology: Project overview
+Trained models will be saved as `.joblib` files in the specified output directory (or `models/` folder).
 
-The app runs in limited mode if models are not found, you should input your own full directory where you pulled the repository.
+---
 
-Note: Trained model files are not included in the repository due to their size. You must generate them locally by running the notebooks.
+## Running the Streamlit App
+
+1. Place the trained model files in the `models/` folder
+2. Run the app:
+
+```bash
+streamlit run app.py
+```
+
+The app will be available at `http://localhost:8501`
+
+### Features
+
+- **Predict** — Estimate SHD from building inputs
+- **Zone Performance** — View model metrics by climate zone
+- **Methodology** — Project overview
+
+The app runs in limited mode if models are not found. You can specify your own full directory path where you pulled the repository.
+
+---
+
+## Notes
+
+- Trained model files are not included in the repository due to their size
+- You must generate them locally by running the notebooks
