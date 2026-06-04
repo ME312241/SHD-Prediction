@@ -1,0 +1,43 @@
+metadata_and_annual	bldg_id	integer	n/a	The dwelling unit model unique identifier (between 1 and the number of samples)	n/a
+metadata_and_annual	in.bedrooms	integer	n/a	Number of bedrooms	1|2|3|4|5
+"metadata_and_annual, timeseries"	in.building_america_climate_zone	string	n/a	Building America climate zone	Cold|Hot-Dry|Hot-Humid|Marine|Mixed-Dry|Mixed-Humid|Very Cold
+metadata_and_annual	in.duct_leakage_and_insulation	string	n/a	Duct insulation and leakage to outside from the portion of ducts in unconditioned spaces	"0% Leakage to Outside, Uninsulated|10% Leakage to Outside, R-4|10% Leakage to Outside, R-6|10% Leakage to Outside, R-8|10% Leakage to Outside, Uninsulated|20% Leakage to Outside, R-4|20% Leakage to Outside, R-6|20% Leakage to Outside, R-8|20% Leakage to Outside, Uninsulated|30% Leakage to Outside, R-4|30% Leakage to Outside, R-6|30% Leakage to Outside, R-8|30% Leakage to Outside, Uninsulated|None"
+metadata_and_annual	in.duct_location	string	n/a	Location of Duct System	Attic|Crawlspace|Garage|Heated Basement|Living Space|None|Unheated Basement
+metadata_and_annual	in.geometry_attic_type	string	n/a	Type of attic	Finished Attic or Cathedral Ceilings|None|Unvented Attic|Vented Attic
+"metadata_and_annual, timeseries"	in.geometry_building_type_recs	string	n/a	PUMS 2019 building type	Mobile Home|Multi-Family with 2 - 4 Units|Multi-Family with 5+ Units|Single-Family Attached|Single-Family Detached
+metadata_and_annual	in.geometry_wall_exterior_finish	string	n/a	Exterior wall finish material and color	"Aluminum, Light|Brick, Light|Brick, Medium/Dark|Fiber-Cement, Light|None|Shingle, Asbestos, Medium|Shingle, Composition, Medium|Stucco, Light|Stucco, Medium/Dark|Vinyl, Light|Wood, Medium/Dark"
+metadata_and_annual	in.geometry_wall_type	string	n/a	Exterior wall material	Brick|Concrete|Steel Frame|Wood Frame
+metadata_and_annual	in.ground_thermal_conductivity	float	Btu/hr-ft-F	The thermal conductivity of the ground using in foundation and geothermal heat pump heat transfer calculations	0.5|0.8|1.1|1.4|1.7|2.0|2.3|2.6
+metadata_and_annual	in.heating_fuel	string	n/a	Fuel used for primary heating	Electricity|Fuel Oil|Natural Gas|None|Other Fuel|Propane
+metadata_and_annual	in.hvac_has_ducts	boolean	n/a	Presence of ducts	No|Yes
+metadata_and_annual	in.hvac_has_shared_system	string	n/a	Presence of shared HVAC system	Cooling Only|Heating Only|Heating and Cooling|None
+metadata_and_annual	in.hvac_heating_efficiency	string	n/a	Presence and efficiency of primary heating system	"ASHP, SEER 10, 6.2 HSPF|ASHP, SEER 13, 7.7 HSPF|ASHP, SEER 15, 8.5 HSPF|Electric Baseboard, 100% Efficiency|Electric Boiler, 100% AFUE|Electric Furnace, 100% AFUE|Electric Wall Furnace, 100% AFUE|Fuel Boiler, 76% AFUE|Fuel Boiler, 80% AFUE|Fuel Boiler, 90% AFUE|Fuel Furnace, 60% AFUE|Fuel Furnace, 76% AFUE|Fuel Furnace, 80% AFUE|Fuel Furnace, 92.5% AFUE|Fuel Wall/Floor Furnace, 60% AFUE|Fuel Wall/Floor Furnace, 68% AFUE|MSHP, SEER 14.5, 8.2 HSPF|MSHP, SEER 29.3, 14 HSPF|None|Shared Heating"
+metadata_and_annual	in.hvac_heating_type_and_fuel	string	n/a	"Presence, type, and fuel of primary heating system"	Electricity ASHP|Electricity Baseboard|Electricity Electric Boiler|Electricity Electric Furnace|Electricity Electric Wall Furnace|Electricity MSHP|Electricity Shared Heating|Fuel Oil Fuel Boiler|Fuel Oil Fuel Furnace|Fuel Oil Fuel Wall/Floor Furnace|Fuel Oil Shared Heating|Natural Gas Fuel Boiler|Natural Gas Fuel Furnace|Natural Gas Fuel Wall/Floor Furnace|Natural Gas Shared Heating|None|Other Fuel Fuel Boiler|Other Fuel Fuel Furnace|Other Fuel Fuel Wall/Floor Furnace|Other Fuel Shared Heating|Propane Fuel Boiler|Propane Fuel Furnace|Propane Fuel Wall/Floor Furnace|Propane Shared Heating
+metadata_and_annual	in.infiltration	string	ACH50	Air leakage rates for the living and garage spaces	1 ACH50|10 ACH50|15 ACH50|2 ACH50|20 ACH50|25 ACH50|3 ACH50|30 ACH50|4 ACH50|40 ACH50|5 ACH50|50 ACH50|6 ACH50|7 ACH50|8 ACH50
+metadata_and_annual	in.insulation_ceiling	string	n/a	Ceiling insulation level (between the living space and unconditioned attic)	None|R-13|R-19|R-30|R-38|R-49|R-7|Uninsulated
+metadata_and_annual	in.insulation_floor	string	n/a	Floor insulation level	Ceiling R-13|Ceiling R-19|Ceiling R-30|None|Uninsulated
+metadata_and_annual	in.insulation_foundation_wall	string	n/a	Foundation walls insulation level	"None|Uninsulated|Wall R-10, Exterior|Wall R-15, Exterior|Wall R-5, Exterior"
+metadata_and_annual	in.insulation_rim_joist	string	n/a	Insulation level for rim joists	"None|R-10, Exterior|R-15, Exterior|R-5, Exterior|Uninsulated"
+metadata_and_annual	in.insulation_roof	string	n/a	Finished roof insulation level between roof and conditioned space	"Finished, R-13|Finished, R-19|Finished, R-30|Finished, R-38|Finished, R-49|Finished, R-7|Finished, Uninsulated|Unfinished, Uninsulated"
+metadata_and_annual	in.insulation_slab	string	n/a	Slab insulation level	"2ft R10 Perimeter, Vertical|2ft R10 Under, Horizontal|2ft R5 Perimeter, Vertical|2ft R5 Under, Horizontal|None|Uninsulated"
+metadata_and_annual	in.insulation_wall	string	n/a	Wall construction type and insulation level	"Brick, 12-in, 3-wythe, R-11|Brick, 12-in, 3-wythe, R-15|Brick, 12-in, 3-wythe, R-19|Brick, 12-in, 3-wythe, R-7|Brick, 12-in, 3-wythe, Uninsulated|CMU, 6-in Hollow, R-11|CMU, 6-in Hollow, R-15|CMU, 6-in Hollow, R-19|CMU, 6-in Hollow, R-7|CMU, 6-in Hollow, Uninsulated|Wood Stud, R-11|Wood Stud, R-15|Wood Stud, R-19|Wood Stud, R-7|Wood Stud, Uninsulated"
+metadata_and_annual	in.interior_shading	string	n/a	Fraction of window shading in the summer and winter	"Summer = 0.7, Winter = 0.85"
+metadata_and_annual	in.lighting	string	n/a	Fraction of lighting types	100% CFL|100% Incandescent|100% LED
+metadata_and_annual	in.misc_gas_fireplace	string	n/a	Presence of gas fireplace	Gas Fireplace|None
+metadata_and_annual	in.misc_gas_grill	string	n/a	Presence of gas grill	Gas Grill|None
+metadata_and_annual	in.natural_ventilation	string	n/a	Schedule of natural ventilation from windows	"Cooling Season, 7 days/wk"
+metadata_and_annual	in.neighbors	string	ft	Presence and distance between the dwelling unit and the nearest neighbors to the left and right.	12|2|27|4|7|Left/Right at 15ft|None
+metadata_and_annual	in.occupants	string	n/a	The number of occupants living in the dwelling unit	0|1|10+|2|3|4|5|6|7|8|9
+metadata_and_annual	in.orientation	string	n/a	Orientation of the building	East|North|Northeast|Northwest|South|Southeast|Southwest|West
+metadata_and_annual	in.radiant_barrier	string	n/a	Presence of radiant barrier in attic	No|None
+metadata_and_annual	in.roof_material	string	n/a	Roof material type	"Asphalt Shingles, Medium|Composition Shingles|Metal, Dark|Slate|Tile, Clay or Ceramic|Tile, Concrete|Wood Shingles"
+metadata_and_annual	in.sqft	integer	sqft	Conditioned floor area of the representative housing unit	273|298|322|623|625|634|854|872|881|1138|1207|1228|1678|1682|1698|2115|2152|2179|2648|2663|2678|3171|3228|3310|5587|6348|7414
+metadata_and_annual	in.state	string	n/a	State	AL|AR|AZ|CA|CO|CT|DC|DE|FL|GA|IA|ID|IL|IN|KS|KY|LA|MA|MD|ME|MI|MN|MO|MS|MT|NC|ND|NE|NH|NJ|NM|NV|NY|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VA|VT|WA|WI|WV|WY
+metadata_and_annual	in.usage_level	string	n/a	Usage of major appliances relative to the national average	High|Low|Medium
+metadata_and_annual	in.vintage	string	n/a	Range in which the builing was constructed	1940s|1950s|1960s|1970s|1980s|1990s|2000s|2010s|<1940
+"metadata_and_annual, timeseries"	out.electricity.heating.energy_consumption.kwh	float	kWh	Electricity consumed by heating systems excludes usage by fans/pumps	n/a
+"metadata_and_annual, timeseries"	out.load.heating.energy_delivered.kbtu	float	kbtu	Total energy delivered by heating system includes HVAC distribution losses	n/a
+"metadata_and_annual, timeseries"	out.fuel_oil.heating.energy_consumption.kwh	float	kWh	Fuel oil consumed by fuel oil heating systems	n/a
+"metadata_and_annual, timeseries"	out.natural_gas.heating.energy_consumption.kwh	float	kWh	Natural gas consumed by natural gas heating systems	n/a
+"metadata_and_annual, timeseries"	out.propane.heating.energy_consumption.kwh	float	kWh	Propane consumed by propane heating systems	n/a
+hdd65_annual_avg

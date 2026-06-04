@@ -1,0 +1,33 @@
+zone,zone_safe,model,n_samples,mae,rmse,r2,mape_pct,bias,p90_abs_error,baseline_rmse,rmse_vs_baseline,plot
+GLOBAL — all rows,global,XGBoost,331121,78.6538,116.447,-0.7337,98.586,-78.6538,189.2963,93.0301,23.4169,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\global__XGBoost.png
+GLOBAL — all rows,global,CatBoost,331121,18.3029,32.8927,0.8617,28.956,-13.2102,48.0936,93.0301,-60.1374,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\global__CatBoost.png
+GLOBAL — all rows,global,LightGBM,331121,18.849,33.855,0.8535,29.899,-12.568,48.4154,93.0301,-59.1751,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\global__LightGBM.png
+GLOBAL — all rows,global,Stacking,331121,72.0238,111.0537,-0.5768,151.845,71.376,176.9908,93.0301,18.0236,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\global__Stacking.png
+ZONE: Cold,Cold,XGBoost,109077,125.1071,159.3887,-1.5453,99.503,-125.1071,255.3985,102.8263,56.5624,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Cold__XGBoost.png
+ZONE: Cold,Cold,CatBoost,109077,28.5133,44.09,0.8052,23.113,-22.2896,68.4541,102.8263,-58.7363,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Cold__CatBoost.png
+ZONE: Cold,Cold,LightGBM,109077,30.6903,47.0993,0.7777,24.886,-25.3218,72.6387,102.8263,-55.727,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Cold__LightGBM.png
+ZONE: Cold,Cold,Stacking,109077,552.3932,707.1408,-49.1004,469.718,552.3928,1133.7993,102.8263,604.3145,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Cold__Stacking.png
+ZONE: Hot-Dry,Hot_Dry,XGBoost,39347,63.2394,96.7311,-0.6258,98.462,-63.2394,156.2044,79.2065,17.5245,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Dry__XGBoost.png
+ZONE: Hot-Dry,Hot_Dry,CatBoost,39347,12.3825,23.6694,0.9027,30.542,-9.2199,31.3751,79.2065,-55.5372,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Dry__CatBoost.png
+ZONE: Hot-Dry,Hot_Dry,LightGBM,39347,17.8164,31.3567,0.8292,35.328,-16.2653,45.5462,79.2065,-47.8498,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Dry__LightGBM.png
+ZONE: Hot-Dry,Hot_Dry,Stacking,39347,57.8277,88.556,-0.3626,91.635,-57.8277,142.7233,79.2065,9.3495,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Dry__Stacking.png
+ZONE: Hot-Humid,Hot_Humid,XGBoost,58161,14.6757,28.9678,0.0293,93.116,-14.6753,37.1882,31.1814,-2.2136,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Humid__XGBoost.png
+ZONE: Hot-Humid,Hot_Humid,CatBoost,58161,4.6538,11.6866,0.842,42.984,-3.1734,11.9718,31.1814,-19.4948,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Humid__CatBoost.png
+ZONE: Hot-Humid,Hot_Humid,LightGBM,58161,4.6554,11.9132,0.8358,42.041,-3.1041,11.5596,31.1814,-19.2683,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Humid__LightGBM.png
+ZONE: Hot-Humid,Hot_Humid,Stacking,58161,4.3522,10.5422,0.8714,64.18,-0.019,11.0308,31.1814,-20.6393,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Hot_Humid__Stacking.png
+ZONE: Marine,Marine,XGBoost,19285,74.8345,107.0234,-0.8628,98.845,-74.8345,161.7364,81.1858,25.8376,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Marine__XGBoost.png
+ZONE: Marine,Marine,CatBoost,19285,14.049,25.8526,0.8913,21.408,-9.2204,33.5997,81.1858,-55.3332,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Marine__CatBoost.png
+ZONE: Marine,Marine,LightGBM,19285,16.5998,29.1779,0.8615,24.504,-12.1521,38.9279,81.1858,-52.0078,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Marine__LightGBM.png
+ZONE: Marine,Marine,Stacking,19285,56.97,84.5308,-0.1621,88.39,56.4138,128.5699,81.1858,3.3451,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Marine__Stacking.png
+ZONE: Mixed-Dry,Mixed_Dry,XGBoost,2463,70.3408,108.7344,-0.6332,98.954,-70.3408,185.2907,90.5879,18.1465,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Dry__XGBoost.png
+ZONE: Mixed-Dry,Mixed_Dry,CatBoost,2463,16.1187,30.4264,0.8721,27.57,-8.1168,40.1865,90.5879,-60.1615,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Dry__CatBoost.png
+ZONE: Mixed-Dry,Mixed_Dry,LightGBM,2463,18.7552,35.7943,0.823,28.297,-13.2968,48.7619,90.5879,-54.7936,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Dry__LightGBM.png
+ZONE: Mixed-Dry,Mixed_Dry,Stacking,2463,52.1912,82.0367,0.0703,71.921,-52.1908,136.5489,90.5879,-8.5512,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Dry__Stacking.png
+ZONE: Mixed-Humid,Mixed_Humid,XGBoost,100540,70.8506,100.2113,-0.9007,98.916,-70.8506,156.1282,76.2163,23.9949,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Humid__XGBoost.png
+ZONE: Mixed-Humid,Mixed_Humid,CatBoost,100540,16.6207,28.1926,0.8496,25.0,-11.4646,41.0201,76.2163,-48.0237,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Humid__CatBoost.png
+ZONE: Mixed-Humid,Mixed_Humid,LightGBM,100540,16.8211,28.526,0.846,25.079,-12.4428,41.2296,76.2163,-47.6903,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Humid__LightGBM.png
+ZONE: Mixed-Humid,Mixed_Humid,Stacking,100540,116.6112,172.2226,-4.614,180.143,116.5228,261.7995,76.2163,96.0062,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Mixed_Humid__Stacking.png
+ZONE: Very Cold,Very_Cold,XGBoost,2192,211.7634,249.0177,-2.574,99.757,-211.7634,410.2655,133.9062,115.1115,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Very_Cold__XGBoost.png
+ZONE: Very Cold,Very_Cold,CatBoost,2192,49.4119,72.1852,0.6997,21.625,-43.5931,123.1923,133.9062,-61.721,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Very_Cold__CatBoost.png
+ZONE: Very Cold,Very_Cold,LightGBM,2192,52.4726,75.6741,0.6699,23.717,-45.9905,130.6156,133.9062,-58.2321,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Very_Cold__LightGBM.png
+ZONE: Very Cold,Very_Cold,Stacking,2192,96.4991,121.084,0.155,42.953,-96.25,204.1026,133.9062,-12.8222,A:\College\Thesis\Submission\models\comstock_5.5\evaluation\Very_Cold__Stacking.png
